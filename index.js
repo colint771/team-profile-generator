@@ -1,12 +1,12 @@
-const Manager = require("lib/Manager.js");
-const Engineer = require("lib/Engineer.js");
-const Intern = require("lib/Intern.js");
+const Manager = require("/Users/colint771/bootcamp/team-profile-generator/lib/Manager.js");
+const Engineer = require("/Users/colint771/bootcamp/team-profile-generator/lib/Engineer.js");
+const Intern = require("/Users/colint771/bootcamp/team-profile-generator/lib/Intern.js");
 const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
 const output_dir = path.resolve(__dirname, "output");
 const outputPath = path.join(output_dir, "team.html");
-const generateTeam = require("src/temp.js");
+const generateTeam = require("/Users/colint771/bootcamp/team-profile-generator/src/temp.js");
 const { listenerCount } = require("process");
 
 teamArray = []
