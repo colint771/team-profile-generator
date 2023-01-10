@@ -1,4 +1,4 @@
-const Engineer = require("lib/Engineer.js");
+const Engineer = require("/Users/colint771/bootcamp/team-profile-generator/lib/Engineer.js");
 
 test("github creation", () => {
     const testGithub = "colint771";

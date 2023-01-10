@@ -1,4 +1,4 @@
-const Intern = require("lib/Intern.js");
+const Intern = require("/Users/colint771/bootcamp/team-profile-generator/lib/Intern.js");
 
 test("enter school", () => {
     const testSchool = "School Name";

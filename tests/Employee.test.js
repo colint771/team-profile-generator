@@ -1,6 +1,6 @@
-const Employee = require("lib/Employee.js");
+const Employee = require("/Users/colint771/bootcamp/team-profile-generator/lib/Employee.js");
 
-TextDecoderStream("Can create a new employee.", () => {
+test("Can create a new employee.", () => {
     const employeeInstance = new Employee();
     expect(typeof(employeeInstance)).toBe("object");
 })
@@ -8,7 +8,7 @@ TextDecoderStream("Can create a new employee.", () => {
 test("Testing name.", () => {
     const name = "Colin";
     const employeeInstance = new Employee(name);
-    expect(employeeInstance.name).toBe(name);
+    expect(employeeInstance.name).toBe("Colin");
 })
 
 test("Testing ID.", () => {
@@ -32,7 +32,7 @@ test("Get name with getName method.", () => {
 test("Get ID with getID method", () => {
     const testID = 2;
     const employeeInstance = new Employee("Colin", testID);
-    expect(employeeInstance.getID()).toBe(testID);
+    expect(employeeInstance.getId()).toBe(testID);
 })
 
 test("Tests email with getEmail method", () => {
@@ -44,5 +44,5 @@ test("Tests email with getEmail method", () => {
 
 test("role test.", () => {
     const returnValue = "Employee";
-    const employeeInstance = new Employee("Colin", 2, "colint771@gmail.com");
+    const employeeInstance = new Employee("Colin", 2, "colint771@gmail.com")
 })

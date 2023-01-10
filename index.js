@@ -58,7 +58,7 @@ function addManager() {
 
         {
             type: "input",
-            name: "managerOfficeNumber";
+            name: "managerOfficeNumber",
             message: "What is the manager's office number?",
         }
     ]).then(answers => {

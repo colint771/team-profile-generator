@@ -1,4 +1,4 @@
-const Manager = require("lib/Manager.js");
+const Manager = require("/Users/colint771/bootcamp/team-profile-generator/lib/Manager.js");
 
 test("create an office number", () => {
     const testOfficeNumber = 2;
