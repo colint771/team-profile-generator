@@ -8,7 +8,7 @@ test("Can create a new employee.", () => {
 test("Testing name.", () => {
     const name = "Colin";
     const employeeInstance = new Employee(name);
-    expect(employeeInstance.name).toBe("Colin");
+    expect(employeeInstance.name).toBe(name);
 })
 
 test("Testing ID.", () => {
@@ -26,7 +26,7 @@ test("Testing email.", () => {
 test("Get name with getName method.", () => {
     const testName = "Colin";
     const employeeInstance = new Employee(testName);
-    expect(employeeInstance.getName).toBe(testName);
+    expect(employeeInstance.getName()).toBe(testName);
 })
 
 test("Get ID with getID method", () => {
