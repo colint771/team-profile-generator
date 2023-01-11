@@ -14,7 +14,7 @@
   
   ## [Description](#table-of-contents)
 
-  This application utilizes node.js, inquierer, Jest, and Object Oriented Programming to generate an HTML document for your team members. The application provides prompts to the user within the command line to answer, and it generates an HTML document based on the user's inputs.
+  This application utilizes node.js, inquirer, Jest, and Object Oriented Programming to generate an HTML document for your team members. The application provides prompts to the user within the command line to answer, and it generates an HTML document based on the user's inputs.
 
   ## [Installation](#table-of-contents)
 
