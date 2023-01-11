@@ -26,7 +26,7 @@
 
   The following video is a demonstration on using this application: [video](https://drive.google.com/file/d/1A8E9TuTCfn7Y4hlsWmJs-GfV96B35n3P/view)
 
-  The following is an image of what the HTML will look like: [img](Assets/my-team.jpeg)
+  The following is an image of what the HTML will look like: ![img](Assets/my-team.jpeg)
 
   ## [Tests](#table-of-contents)
 
