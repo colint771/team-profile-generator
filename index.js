@@ -4,8 +4,8 @@ const Intern = require("/Users/colint771/bootcamp/team-profile-generator/lib/Int
 const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
-const output_dir = path.resolve(__dirname, "output");
-const outputPath = path.join(output_dir, "team.html");
+const dist_dir = path.resolve(__dirname, "dist");
+const distPath = path.join(dist_dir, "team.html");
 const generateTeam = require("/Users/colint771/bootcamp/team-profile-generator/src/temp.js");
 const { listenerCount } = require("process");
 
@@ -16,21 +16,22 @@ function runApp () {
         inquirer.prompt([{
             type: "list",
             message: "Which type of employee do you want to add to your team?",
-            name: ["Manager", "Engineer", "Intern", "N/A"]
+            name: "addJobPosition",
+            choices: ["Manager", "Engineer", "Intern", "N/A"]
         }]).then(function (userInput) {
-            switch(userInput.addEmployeePrompt) {
+            switch(userInput.addJobPosition) {
                 case "Manager": 
-                    add.Manager();
+                    addManager();
                     break;
                 case "Engineer":
-                    add.Engineer();
+                    addEngineer();
                     break;
                 case "Intern":
-                    add.Intern();
+                    addIntern();
                     break;
                 
                 default:
-                    htmlBuilder();
+                    htmlGenerator();
 
             }
         })
@@ -136,11 +137,11 @@ function addIntern() {
 function htmlGenerator () {
     console.log("Team Created!")
 
-    fs.writeFileSync(outputPath, generateTeam(teamArray), "UTF-8")
+    fs.writeFileSync(distPath, generateTeam(teamArray), "UTF-8")
 }
 
 createTeam();
 
-}
+};
 
 runApp();
